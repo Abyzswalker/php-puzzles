@@ -29,7 +29,7 @@ function sum_n_elements(array $arr, int $n): int
 function sumNelements(array $arr, int $n): int
 {
     if ($n > count($arr)) {
-        throw new Exception("min cannot be more or equals than max");
+        throw new Exception("error");
     }
 
     return intval(array_sum(array_slice($arr, 0, $n)));
